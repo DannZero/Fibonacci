@@ -8,36 +8,36 @@
 #include<iostream>
 using namespace std;
 
-int fibonacci(int n);
-signed int fibonacciRecursivo(int n);
+int fibonacci(int n);      //se declara la función iterativa
+signed int fibonacciRecursivo(int n);   //se declara la función recursiva
 
 int main (){
-	int n;
+	int n;   //numero de digito deseado
 	cout << "Ingrese el numero de la sucesion de Fibonacci a mostrar: ";
-	cin >> n;
-	int resultado;
-	resultado = fibonacci(n);
+	cin >> n; //se recibe el numero de digito deseado
+	int resultado;   //se declara variable donde se guardará el resultado
+	resultado = fibonacci(n); //se asigna el resultado a aquello que devuelve la funcion iterativa
 	cout << "Resultado iterativo: " << resultado << endl;
-	resultado = fibonacciRecursivo(n);
+	resultado = fibonacciRecursivo(n); //se asigna el resultado a aquello que devuelve la funcion recursiva
 	cout << "Resultado recursivo: " << resultado << endl;
 }
 
 
-int fibonacci(int n){
-	if (n < 2)
+int fibonacci(int n){    //creacion de la funcion iterativa
+	if (n < 2)	// en caso de que n sea menor que dos, el digito buscado es igual a n
 		return n;
 	int a = 0, b = 1, c;
-	for (int i = 1 ; i < n ; ++i){
-		c = a + b;
+	for (int i = 1 ; i < n ; ++i){    //ciclo principal de la funcion, donde se suma el digito 'a' y el siguiente ('b')
+		c = a + b;                //para formar 'c', que despues de las iteraciones necesarias es el digito deseado
 		a = b;
 		b = c;
 	}
 	return c;
 }
 
-signed int fibonacciRecursivo(int n){
-	if(n < 2){
+signed int fibonacciRecursivo(int n){		//creacion de la funcion recursiva
+	if(n < 2){				//en caso de que n sea menor que dos, el digito buscado es igual a 
 		return n;
 	}
-	return fibonacci(n-2) + fibonacci(n-1);
+	return fibonacci(n-2) + fibonacci(n-1);  //aqui se llama a la funcion iterativa, generando asi el metodo recursivo
 }
