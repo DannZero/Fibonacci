@@ -9,8 +9,8 @@ int main (){
 	cout << "Ingrese el numero de la sucesion de Fibonacci a mostrar: ";
 	cin >> n;
 	int resultado;
-	/*resultado = fibonacci(n);
-	cout << "Resultado iterativo: " << resultado << endl;*/
+	resultado = fibonacci(n);
+	cout << "Resultado iterativo: " << resultado << endl;
 	resultado = fibonacciRecursivo(n);
 	cout << "Resultado recursivo: " << resultado << endl;
 }
