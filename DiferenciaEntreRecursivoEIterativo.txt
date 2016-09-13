@@ -4,4 +4,10 @@
  */
  
 
-En todas la ejecuciones del programa se dio el mismo resultado para el método iterativo como el recursivo, pero lo que sí se pudo notar fue que en la llamada iterativa se tardaba menos en arrojar el resultado que en la recursiva. Esto puede ser por que en el método iterativo se opera por medio de una sola función -for- y tres variables -a, b, c- ; en cambio en el método recursivo cada que se llama al siguiente método se "guarda" lo que se operó en el metodo anteriormente llamado y se mantiene hasta que se cumple una condicion de paro que haga volver un valor desde el ultimo método que se mandó a llamar recursivamente hasta el primero, lo que provoca que se ocupen más recursos de la computadora en tiempo de ejecución.
+En todas la ejecuciones del programa se dio el mismo resultado para el método iterativo como el recursivo, pero 
+ lo que sí se pudo notar fue que en la llamada iterativa se tardaba menos en arrojar el resultado que en la recursiva. 
+ Esto puede ser por que en el método iterativo se opera por medio de una sola función -for- y tres variables -a, b, c- ; 
+ en cambio en el método recursivo cada que se llama al siguiente método se "guarda" lo que se operó en el metodo 
+ anteriormente llamado y se mantiene hasta que se cumple una condicion de paro que haga volver un valor desde el ultimo 
+ método que se mandó a llamar recursivamente hasta el primero, lo que provoca que se ocupen más recursos de la computadora 
+ en tiempo de ejecución.
