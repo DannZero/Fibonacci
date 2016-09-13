@@ -3,6 +3,8 @@
    Descripción: Este programa calcula el digito de la serie de Fibonacci que el usuario pida. Dicho calculo se realiza 
    por dos metodos: iterativo (con un ciclo), y recursivo (llamando al mismo método las veces necesarias). 
    El objetivo de este programa es comparar los resultados de cada uno de los metodos para comprender sus diferencias.
+   
+ *Nota: Github no nos deja subir carpetas. :(
 */ 
 
 #include<iostream>
