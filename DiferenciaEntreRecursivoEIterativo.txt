@@ -1,6 +1,5 @@
-/* Autores:
- * blah
- * 
+/* Nombres: Filtzer Gorbach Gabriel
+            Ponce de León Súchil Daniel
  */
  
 
